@@ -1,0 +1,98 @@
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.top {
+    position: fixed;
+    height: 40px;
+    top: 0;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.top h1 {
+    flex: initial;
+    font-weight: 600;
+    font-size: clamp(15px, 5vh, 30px);
+}
+
+.top button {
+    flex: initial;
+    margin: 10px;
+}
+
+#book-form {
+    position: relative;
+    background-color: #F0F8FF;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: min-content;
+    border-radius: 1rem;
+    z-index: 2;
+}
+
+.form-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%,40%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top:0;
+    right:0;
+}
+
+
+#library {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center;
+    justify-self: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.book-card {
+    background-color: antiquewhite;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem 2.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%,0.3);
+}
