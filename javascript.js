@@ -1,9 +1,4 @@
-const myLibrary = [{
-    title: 'The Hobbit, or There and Back Again',
-    author: 'J.R.R. Tolkien',
-    pages: 310,
-    read: true,
-}];
+const myLibrary = [];
 
 function Book(author = 'unknown', title = 'unknown', noOfPages = '0', isRead = false) {
     //constructor
